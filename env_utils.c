@@ -1,7 +1,10 @@
 #include "shell.h"
 /**
+ * env_cmd - this function print env command
+ * @arg: argument
+ * Return: 0
  */
-int env_cmd(char **args)
+int env_cmd(char **arg)
 {
 	char *env;
 
