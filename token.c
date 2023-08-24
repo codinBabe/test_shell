@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  */
-char **tokenize(char *input , char *arg, ssize_t len)
+char **tokenize(char *input, char **arg, ssize_t len)
 {
 	char *input_copy, *ptoken;
 	const char *delim;

@@ -14,7 +14,7 @@ char *_strtok(char *str, const char *delim)
 	size = 0;
 	while (str[size])
 		size++;
-	token = malloc(size0f(char) * (size + 1));
+	token = malloc(sizeof(char) * (size + 1));
 	if (token == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)

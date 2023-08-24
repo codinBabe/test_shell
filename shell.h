@@ -34,6 +34,8 @@ void str_cat(char *src, char *dest);
 char *_strchr(char *s, char c);
 int _strcspn(char *s, char *src);
 int _strcmp(char *s, char *c);
+char *_strdup(char *dup, char *str);
+int _atoi(char *s);
 
 
 /** PROTOTYPE **/
@@ -52,5 +54,5 @@ int exec(char **arg);
 char *_path(char *arg);
 char *_getline(void);
 char *prompt(ssize_t *arg);
-char **tokenize(char *input , char *arg, ssize_t len);
+char **tokenize(char *input , char **arg, ssize_t len);
 #endif

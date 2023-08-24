@@ -3,7 +3,7 @@
  */
 void _1exit(char **r, int status)
 {
-	char cmd = NULL;
+	char **cmd = NULL;
 	int i = 0, arg;
 	const char *err = "$: too many arguments\n";
 

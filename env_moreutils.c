@@ -11,7 +11,7 @@ int _env(Node *e)
 
 		while (e->env_var[i][j])
 		{
-			write(STDOUT_FILENO, &e-env_var[i][j], 1);
+			write(STDOUT_FILENO, &e->env_var[i][j], 1);
 			j++;
 		}
 		write(STDOUT_FILENO, "\n", 1);

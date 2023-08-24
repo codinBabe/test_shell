@@ -33,7 +33,7 @@ void str_cat(char *src, char *dest)
 }
 /**
  */
-char *strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 
@@ -46,7 +46,7 @@ char *strchr(char *s, char c)
 }
 /**
  */
-int _strcspn(*char *s, char *src)
+int _strcspn(char *s, char *src)
 {
 	int i, j = 0;
 

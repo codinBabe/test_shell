@@ -3,7 +3,7 @@
  */
 int exec(char **arg)
 {
-	char *fc, fl;
+	char *fc, *fl;
 	pid_t ch;
 	int i = 0;
 

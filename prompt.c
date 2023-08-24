@@ -4,7 +4,7 @@
 char *prompt(ssize_t *arg)
 {
 	char *dp = "$ ";
-	char input = NULL;
+	char *input = NULL;
 
 	if (isatty(STDIN_FILENO))
 		write(STDOUT_FILENO, dp, 2);
@@ -27,7 +27,7 @@ char *prompt(ssize_t *arg)
 		free(input);
 		exit(EXIT_SUCCESS);
 	}
-	if (*arg == 0 && isatty(STDIN _FILENO))
+	if (*arg == 0 && isatty(STDIN_FILENO))
 	{
 		free(input);
 		return (prompt(arg));

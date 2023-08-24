@@ -17,8 +17,8 @@ char *_getenv(const char *name)
 			if (environ[i][j] != name[j])
 				break;
 		}
-		if (j == length && environ[i][j] == "=")
-			return (&environ[i][j + 1])
+		if (j == length && environ[i][j] == '=')
+			return (&environ[i][j + 1]);
 	}
 	return (NULL);
 }
