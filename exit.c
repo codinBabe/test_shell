@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  */
-void _exit(char **r, int status)
+void _1exit(char **r, int status)
 {
 	char cmd = NULL;
 	int i = 0, arg;

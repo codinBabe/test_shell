@@ -12,7 +12,7 @@ char *prompt(ssize_t *arg)
 	if (input == NULL)
 	{
 		if (isatty(STDIN_FILENO))
-			write(SDTOUT_FILENO, "\n", 1);
+			write(STDOUT_FILENO, "\n", 1);
 		exit(EXIT_SUCCESS);
 	}
 	*arg = str_len(input);

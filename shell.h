@@ -18,7 +18,7 @@
 #define MAX_ARGS 10
 #define UNUSED  __attribute__((unused))
 
-extern char **environ
+extern char **environ;
 /**
  */
 typedef struct Node
@@ -31,8 +31,8 @@ typedef struct Node
 int str_len(char *s);
 void str_copy(char *src, char *dest);
 void str_cat(char *src, char *dest);
-char *strchr(char *s, char c);
-int _strcspn(*char *s, char *src);
+char *_strchr(char *s, char c);
+int _strcspn(char *s, char *src);
 int _strcmp(char *s, char *c);
 
 
@@ -42,7 +42,7 @@ int _env(Node *e);
 void _env_help(char *input, Node *e);
 int _setenv(char **arg);
 int _unsetenv(char **arg);
-void _exit(char **r, int status);
+void _1exit(char **r, int status);
 void free_arr(char **arg);
 int _perror(char *s);
 void print_error(char **a, char *err);
@@ -52,4 +52,5 @@ int exec(char **arg);
 char *_path(char *arg);
 char *_getline(void);
 char *prompt(ssize_t *arg);
+char **tokenize(char *input , char *arg, ssize_t len);
 #endif

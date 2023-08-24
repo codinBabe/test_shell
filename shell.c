@@ -28,7 +28,7 @@ int main(int argc UNUSED, char **argv UNUSED)
 		if (_strcmp(arg[0], "exit") == 0)
 		{
 			free(input);
-			_exit(arg, s);
+			_1exit(arg, s);
 			free_arr(arg);
 			continue;
 		}
@@ -43,7 +43,7 @@ int main(int argc UNUSED, char **argv UNUSED)
 		if (s == 1)
 			print_error(arg, "not found\n");
 		free(input);
-		free_arr(arg)
+		free_arr(arg);
 	}
 	return (0);
 }

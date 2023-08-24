@@ -12,7 +12,7 @@ char *_getenv(const char *name)
 		length++;
 	for (i = 0; environ[i]; i++)
 	{
-		fo (j = 0; j < length; j++)
+		for (j = 0; j < length; j++)
 		{
 			if (environ[i][j] != name[j])
 				break;

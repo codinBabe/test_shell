@@ -5,7 +5,7 @@ void free_arr(char **arg)
 {
 	char **tmp = arg;
 
-	for (; *tmp != NULL; temp++)
+	for (; *tmp != NULL; tmp++)
 	{
 		free(*tmp);
 		*tmp = NULL;
